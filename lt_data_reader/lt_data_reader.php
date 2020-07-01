@@ -77,7 +77,6 @@ $parser = new LinearTableDataParser();
 function getParsedData($data, $numberOfColumns)
 {
     global $parser;
-    $parser->setPrintable(true);
     $parser->parse($data, $numberOfColumns);
     return $parser->getData();
 }
